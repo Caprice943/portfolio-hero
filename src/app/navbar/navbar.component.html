@@ -2,10 +2,10 @@
         <nav class="navbar">
             <div class="nav-content">
                 <div class="nav-links">
-                    <a routerLink="/accueil" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Accueil</a>
-                    <a routerLink="/experiences" class="nav-link" routerLinkActive="active">Expériences</a>
-                    <a routerLink="/projets" class="nav-link" routerLinkActive="active">Projets</a>
-                    <a routerLink="/contact" class="nav-link" routerLinkActive="active">Contact</a>
+                    <a [routerLink]="['/']" fragment="accueil" class="nav-link">Accueil</a>
+                    <a [routerLink]="['/']" fragment="experiences" class="nav-link">Expériences</a>
+                    <a [routerLink]="['/']" fragment="projets" class="nav-link">Projets</a>
+                    <a [routerLink]="['/']" fragment="contact" class="nav-link">Contact</a>                    
                 </div>
                 <button class="theme-toggle" (click)="toggleTheme()">
                     <span id="theme-icon">🌙</span>

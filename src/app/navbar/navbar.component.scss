@@ -1,15 +1,20 @@
  /* Navbar Styles */
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
             padding: 0 20px;
+            z-index: 80;
+            background: transparent;
         }
         .navbar {
+            max-width: 1200px; 
+            margin: 0 auto;    
             padding: 20px 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative;
         }
         .nav-content {
             background-color: #2a2a2a;
@@ -62,3 +67,4 @@
             color: white;
             background-color: #404040;
         }
+        

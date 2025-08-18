@@ -7,25 +7,9 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: 'accueil',
-        pathMatch: 'full'
-    }
-    ,{
-        path: 'accueil',
         component: ProfileComponent
-    },
-    {
-        path: 'experiences',
-        component: ExperiencesComponent
-    },
-    {
-        path: 'projets',
-        component: ProjectComponent
-    },
-    {
-        path: 'contact',
-        component: ContactComponent
-    },
+    }
+    ,
     {
         path: '**',
         redirectTo: 'accueil'
