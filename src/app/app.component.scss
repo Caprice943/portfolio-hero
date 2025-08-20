@@ -1,7 +1,10 @@
-html {
-  scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 main {
   padding-top: 80px;
+  background-color: #d5c6c6;
+  scroll-behavior: smooth;
 }
