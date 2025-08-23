@@ -1,30 +1,38 @@
 <section class="xp">
-<h2 class=""> Expériences professionnelles </h2>
+  <h2 class="sr-only">Expériences</h2>
 
-<ul class="xp-list">
-    <li class="xp-item">
-        <div class="col period">
-            <article  class="col card" tabindex="0">
-                <header class="card-head">
-                    <h3 class="role">
-                    <ng-container> </ng-container>
-                    <a class="ext" target="_blank" [href]=""> </a>
-                </h3>
-                <p class="seniority"> </p>
-                </header>
+  <ul class="xp-list">
+    @for (xp of experiences; track xp.title) {
+      <li class="xp-item">
+        <div class="col period">{{ xp.period }}</div>
 
-                <p class="desc"> </p>
-                <ul class="tags" aria-label="Technologies">
-                    <li class="chip">
+        <article class="col card" tabindex="0">
+          <header class="card-head">
+            <h3 class="role">
+              {{ xp.title }}
+              @if (xp.company) { · {{ xp.company }} }
+              @if (xp.link) {
+                <a
+                  class="ext"
+                  [href]="xp.link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Voir l’entreprise (nouvel onglet)"
+                >↗</a>
+              }
+            </h3>
 
-                    </li>
-                </ul>
-            </article>
-        </div>
-    </li>
-</ul>
+          </header>
 
+          <p class="desc">{{ xp.description }}</p>
 
-
-
+          <ul class="tags" aria-label="Technologies">
+            @for (t of xp.tags; track t) {
+              <li class="chip">{{ t }}</li>
+            }
+          </ul>
+        </article>
+      </li>
+    }
+  </ul>
 </section>

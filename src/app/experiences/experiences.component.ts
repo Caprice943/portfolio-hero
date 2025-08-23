@@ -5,7 +5,6 @@ type Experience = {
   period: string;
   title: string;
   company?: string;
-  seniority?: string;
   description: string;
   tags: string[];
   link?: string;
@@ -23,22 +22,20 @@ export class ExperiencesComponent {
 
   experiences :  Experience [] = [
     {
-      period: "2O22 - 2024",
-      title: " ",
-      company: " ",
-      seniority: " ",
-      description: " ",
-      tags: [ ],
-      link: " "
+      period: " Novembre 2O22 - Octobre 2024 ",
+      title: " Développeuse Fullstack Junior Java/Angular ",
+      company: " DSI Branche Service-Courrier-Colis de la Poste Groupe ",
+      description: " Pilotage du développement de nouvelles fonctionnalités sur un projet interne stratégique, en méthode Agile SCRUM. Rédaction et automatisation de tests unitaires (JUnit, Jasmine) pour garantir la qualité et la fiabilité du code.Conception et documentation d’API REST avec Spring Boot et Swagger, ainsi que contribution à la mise en conformité de l’accessibilité numérique. ",
+      tags: ["SpringBoot", "Angular", "MySQL", "Jenkins", "SonarQube", "Gitlab", "Docker"],
+      link: "https://www.lapostegroupe.com/fr/services-courrier-colis "
     },
     {
-      period: "2021 - 2022 ",
-      title: " ",
-      company: " ",
-      seniority: " ",
-      description: " ",
-      tags: [ ],
-      link: " "
+      period: " Novembre 2021 - Septembre 2022 ",
+      title: " Développeuse web ",
+      company: " MILOE Santé ",
+      description: " Amélioration et optimisation des fonctionnalités d’un projet web existant pour enrichir l’expérience utilisateur. Intégration d’un chatbot et personnalisation graphique (bannières, cookies) afin de renforcer l’ergonomie et l’attractivité du site. Travail en autonomie dans un contexte 100 % télétravail. ",
+      tags: ["Reactjs", "Tailwind CSS", "GraphQL"],
+      link: "https://www.miloe-sante.com/"
     }, 
   ]
 
