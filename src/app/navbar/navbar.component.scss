@@ -23,20 +23,21 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            border: 1px solid #404040;
+            border: 2px solid white;
         }
         .nav-links {
             display: flex;
             align-items: center;
             gap: 4px;
         }
+
         .nav-link {
             padding: 8px 16px;
             text-decoration: none;
             color: #888;
             border-radius: 25px;
             transition: all 0.3s ease;
-            font-size: 14px;
+            font-size: 18px;
             font-weight: 500;
         }
         .nav-link.active {

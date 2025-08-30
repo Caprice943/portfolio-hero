@@ -22,7 +22,7 @@ export class ExperiencesComponent {
 
   experiences :  Experience [] = [
     {
-      period: " Novembre 2O22 - Octobre 2024 ",
+      period: " Novembre 2022 - Octobre 2024 ",
       title: " Développeuse Fullstack Junior Java/Angular ",
       company: " DSI Branche Service-Courrier-Colis de la Poste Groupe ",
       description: " Pilotage du développement de nouvelles fonctionnalités sur un projet interne stratégique, en méthode Agile SCRUM. Rédaction et automatisation de tests unitaires (JUnit, Jasmine) pour garantir la qualité et la fiabilité du code.Conception et documentation d’API REST avec Spring Boot et Swagger, ainsi que contribution à la mise en conformité de l’accessibilité numérique. ",

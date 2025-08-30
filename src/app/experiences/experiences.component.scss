@@ -1,3 +1,5 @@
+section { scroll-margin-top: var(--nav-h); }
+
 .xp {
   max-width: 1000px;
   margin: 0 auto;
@@ -49,10 +51,9 @@ h2{
   border-radius: 18px;
   padding: 1.25rem 1.25rem 1rem;
   background: color-mix(in oklab, var(--surface-2), transparent 15%);
-  border: 1px solid color-mix(in oklab, var(--surface-3), transparent 35%);
+  border: 2px solid white;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease,
-    border-color 0.22s ease;
+  transition: background-color 0.3s;
   backdrop-filter: blur(8px);
 
   /* Hover/focus: on rend la card plus “glass” et on la met en évidence */
@@ -125,7 +126,7 @@ h2{
   padding: 0.55rem 0.7rem;
   border-radius: 999px;
   background: color-mix(in oklab, var(--surface-3), transparent 25%);
-  border: 1px solid color-mix(in oklab, var(--surface-3), transparent 10%);
+  border: 2px solid white;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) inset;
   color: color-mix(in oklab, var(--text), transparent 12%);
   white-space: nowrap;
