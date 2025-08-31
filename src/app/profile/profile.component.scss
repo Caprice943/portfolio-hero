@@ -72,6 +72,7 @@
 
          a {
               text-decoration: none;
+              font-weight: 600;
             }
         .template-button:hover {
             background-color: #f0f0f0;
@@ -81,7 +82,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            color: #0a3607;
+            color: #35a52d;
             font-size: 14px;
             font-weight: 500;
         }
@@ -89,7 +90,7 @@
             content: '';
             width: 8px;
             height: 8px;
-            background-color: #26d21d;
+            background-color: #47cf40;
             border-radius: 50%;
             animation: pulse 2s infinite;
         }

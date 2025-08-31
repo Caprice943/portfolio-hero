@@ -43,7 +43,7 @@ export class ContactComponent {
     // Ouvre le client mail de l'utilisateur
     window.location.href = `mailto:ton.email@exemple.com?subject=${subject}&body=${body}`;
 
-    // petite pause UX puis reset
+  
     setTimeout(() => {
       this.submitting = false;
       this.form.reset();
