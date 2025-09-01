@@ -23,17 +23,17 @@ export const PROJECTS: Project[] = [
     title: 'Portofolio personnel',
     description: 'Première version de mon portofolio pour me présenter à vous',
     tags: ['Angular', 'SCSS', 'Firebase', 'TypeScript'],
-    codeUrl: '',
+    codeUrl: 'https://github.com/Caprice943/portfolio-hero',
     demoUrl: '',
   },
-  {
-    id: 'meteo',
-    title: 'Application Météo',
-    description: 'Application Météo ',
-    tags: ['JavaScript', 'CSS', 'Firebase'],
-    codeUrl: '',
-    demoUrl: '',
-  },
+  // {
+  //   id: 'meteo',
+  //   title: 'Application Météo',
+  //   description: 'Application Météo ',
+  //   tags: ['JavaScript', 'CSS', 'Firebase'],
+  //   codeUrl: '',
+  //   demoUrl: '',
+  // },
   {
     id: 'memorygame',
     title: 'Jeu de Mémoire',
@@ -42,15 +42,15 @@ export const PROJECTS: Project[] = [
     codeUrl: '',
     demoUrl: '',
   },
-  {
-    id: 'messagingapp',
-    title: 'Application de messages',
-    description:
-      'Application personnalisée de message type Discord ou WhatsApp',
-    tags: ['NodeJs', 'CSS', 'Firebase'],
-    codeUrl: '',
-    demoUrl: '',
-  },
+  // {
+  //   id: 'messagingapp',
+  //   title: 'Application de messages',
+  //   description:
+  //     'Application personnalisée de message type Discord ou WhatsApp',
+  //   tags: ['NodeJs', 'CSS', 'Firebase'],
+  //   codeUrl: '',
+  //   demoUrl: '',
+  // },
     {
     id: 'blackclover',
     title: 'Application BlackClover',

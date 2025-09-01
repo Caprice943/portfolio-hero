@@ -1,22 +1,17 @@
-// .num {
-//   max-width: 1000px;
-//   margin: 0 auto;
-//   padding: 2rem 1rem 4rem;
-// }
-
 section { scroll-margin-top: var(--nav-h); }
 .contact {
+  --radius: 18px;
+  --pad: 1.25rem;
+  --gap: 1.25rem;
+
   position: relative;
   isolation: isolate;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem;
+  padding:  0rem;;
   --nav-h: 72px; 
-  // padding-top: clamp(1rem, 2vw, 2rem);
-  // padding-top: var(--nav-h);
 
   &::before {
-    /* halo gradient subtil en fond (comme projets) */
     content: "";
     position: absolute;
     inset: -5% -20% auto -20%;
@@ -36,8 +31,8 @@ section { scroll-margin-top: var(--nav-h); }
   font-size: 3rem;
   font-weight: 800;
   text-align: center;
-  letter-spacing: .02rem;
-  margin-bottom: 1.25rem;
+  letter-spacing: .02em;
+  margin-top: 4rem;
 
 }
 
@@ -46,7 +41,7 @@ section { scroll-margin-top: var(--nav-h); }
   grid-template-columns: 1fr 1fr;
   align-items: start;
   justify-items: stretch;
-  gap: 25px;
+  gap: 1.5rem;
 
 
   @media (max-width: 920px) {
@@ -54,20 +49,16 @@ section { scroll-margin-top: var(--nav-h); }
   }
 }
 
-/* ---- Card glossy ---- */
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  //  border: 1px solid red;
-
-
 }
 
 .form-card form {
   width: 100%;
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   background: transparent;
   border: 2px solid white;
   border-radius: 18px;
@@ -87,7 +78,7 @@ section { scroll-margin-top: var(--nav-h); }
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
 
   @media (max-width: 560px) {
     grid-template-columns: 1fr;
@@ -145,12 +136,6 @@ textarea {
   color: #fca5a5;
 }
 
-/* ---- Actions ---- */
-// .actions {
-//   display: flex;
-//   justify-content: flex-end;
-//   margin-top: 1rem;
-// }
 
 .btn.send {
   justify-self: start;
@@ -190,7 +175,6 @@ textarea {
 
   h3 {
     margin: 1rem;
-    // letter-spacing: 3px;
     font-weight: 600;
     font-style: italic;
   }
@@ -206,6 +190,11 @@ textarea {
     border: 2px solid #fff;
     backdrop-filter: blur(8px);
     box-shadow: 0 8px 22px rgba(0, 0, 0, .18);
+
+     @media (max-width: 560px) {
+    width: 80%;
+  }
+
   }
 
   .icon-contact {
@@ -224,21 +213,36 @@ textarea {
   }
 
   .txt .label {
-    font-weight: 800;
+    font-weight: 600;
     opacity: .8;
   }
 
   .txt a,
   .txt div {
     font-weight: 700;
+    text-decoration: none;
+  }
+
+  a{
+    color: #8f62c0;
+    font-style: italic;
   }
 
 }
 
-/* Motion reduce */
-// @media (prefers-reduced-motion: reduce) {
-//   .contact-card, input, textarea, .btn.send { transition: none; }
-// }
+  .footer{
+    margin-top: 25px;
+    padding: 2px;
+    height: 70px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(transparent, purple);
+    max-width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
 
 
 /* motion reduce */

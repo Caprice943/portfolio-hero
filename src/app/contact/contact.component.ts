@@ -13,6 +13,7 @@ export class ContactComponent {
   submitting = false;
   contactMail = "heredyamouiri@gmail.com";
   contactLocation = "France";
+  today = new Date();
 
   form = this.fb.group({
     name: ['', [Validators.required, Validators.minLength(2)]],
