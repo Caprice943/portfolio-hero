@@ -10,21 +10,7 @@ section { scroll-margin-top: var(--nav-h); }
   margin: 0 auto;
   padding:  0rem;;
   --nav-h: 72px; 
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: -5% -20% auto -20%;
-    height: 380px;
-    z-index: -1;
-    background:
-      radial-gradient(35% 50% at 20% 30%, #7c3aed44, transparent 60%),
-      radial-gradient(30% 45% at 75% 25%, #6366f144, transparent 60%),
-      radial-gradient(45% 60% at 60% 80%, #06b6d444, transparent 65%);
-    filter: blur(40px);
-    opacity: .7;
-    pointer-events: none;
-  }
+  color: white;
 }
 
 .title {
@@ -43,7 +29,6 @@ section { scroll-margin-top: var(--nav-h); }
   justify-items: stretch;
   gap: 1.5rem;
 
-
   @media (max-width: 920px) {
     grid-template-columns: 1fr;
   }
@@ -59,20 +44,12 @@ section { scroll-margin-top: var(--nav-h); }
   width: 100%;
   display: grid;
   gap: 2rem;
-  background: transparent;
+  background-color: transparent;
   border: 2px solid white;
   border-radius: 18px;
   padding: 2rem;
   backdrop-filter: blur(8px);
   transition: background-color 0.3s;
-
-    &:hover,
-  &:focus-within {
-    transform: translateY(-2px);
-    background: color-mix(in oklab, var(--surface-2, #17181a), transparent 30%);
-    border-color: color-mix(in oklab, #fff, transparent 78%);
-    box-shadow: 0 18px 48px rgba(0, 0, 0, .28);
-  }
 }
 
 .row {
@@ -95,7 +72,7 @@ section { scroll-margin-top: var(--nav-h); }
 }
 
 label {
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: .01em;
 }
 
@@ -194,7 +171,12 @@ textarea {
      @media (max-width: 560px) {
     width: 80%;
   }
+  }
 
+  .pill svg {
+    width: 25px;
+  height: 25px;
+    fill: #fff;
   }
 
   .icon-contact {
@@ -213,18 +195,18 @@ textarea {
   }
 
   .txt .label {
-    font-weight: 600;
+    font-weight: 400;
     opacity: .8;
   }
 
   .txt a,
   .txt div {
-    font-weight: 700;
+    font-weight: 400;
     text-decoration: none;
   }
 
-  a{
-    color: #8f62c0;
+  a, .loc {
+    color: whitesmoke;
     font-style: italic;
   }
 
@@ -234,10 +216,12 @@ textarea {
     margin-top: 25px;
     padding: 2px;
     height: 70px;
+    color: white;
+    border-top: 2px solid white;
     position: relative;
     top: 0;
     bottom: 0;
-    background: linear-gradient(transparent, purple);
+    background: transparent;
     max-width: 100%;
     text-align: center;
     z-index: 1;

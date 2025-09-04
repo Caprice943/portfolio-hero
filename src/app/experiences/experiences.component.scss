@@ -4,6 +4,7 @@ section { scroll-margin-top: var(--nav-h); }
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 1rem 4rem;
+
 }
 
 h2{
@@ -34,7 +35,7 @@ h2{
 }
 
 .col.period {
-  color: color-mix(in oklab, var(--text), transparent 35%);
+  color: white;
   font-weight: 600;
   letter-spacing: 0.02em;
   align-self: start;
@@ -45,30 +46,16 @@ h2{
   }
 }
 
-/* ---- Card ---- */
+
 .card {
   position: relative;
   border-radius: 18px;
   padding: 1.25rem 1.25rem 1rem;
   background: color-mix(in oklab, var(--surface-2), transparent 15%);
   border: 2px solid white;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 30px rgba(111, 54, 202, 0.12);
   transition: background-color 0.3s;
   backdrop-filter: blur(8px);
-
-  /* Hover/focus: on rend la card plus “glass” et on la met en évidence */
-  &:hover,
-  &:focus-within {
-    background: color-mix(
-      in oklab,
-      var(--surface-2),
-      transparent 35%
-    ); /* plus transparent */
-    border-color: color-mix(in oklab, var(--surface-3), white 14%);
-    transform: translateY(-2px);
-    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.22),
-      0 0 0 1px color-mix(in oklab, var(--text), transparent 80%);
-  }
 }
 
 .card-head {
@@ -76,9 +63,11 @@ h2{
   align-items: baseline;
   gap: 0.5rem;
   margin-bottom: 0.25rem;
+  color: white;
 }
 
 .role {
+  color: white;
   font-weight: 800;
   line-height: 1.2;
   font-size: clamp(1.05rem, 0.8vw + 0.8rem, 1.35rem);
@@ -97,19 +86,13 @@ h2{
   transform: translateY(-1px);
 }
 
-.seniority {
-  margin: 0;
-  color: color-mix(in oklab, var(--text), transparent 45%);
-  font-weight: 700;
-}
-
 .desc {
   margin: 0.5rem 0 1rem;
-  color: color-mix(in oklab, var(--text), transparent 18%);
+  color: white;
   line-height: 1.7;
 }
 
-/* ---- Chips / Tags ---- */
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -128,14 +111,7 @@ h2{
   background: color-mix(in oklab, var(--surface-3), transparent 25%);
   border: 2px solid white;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) inset;
-  color: color-mix(in oklab, var(--text), transparent 12%);
+  color: white;
   white-space: nowrap;
 }
 
-/* Option : sur hover card, mets les chips un poil plus lumineuses */
-.card:hover .chip,
-.card:focus-within .chip {
-  background: color-mix(in oklab, var(--surface-3), transparent 15%);
-  color: var(--text);
-  border-color: color-mix(in oklab, var(--surface-3), white 12%);
-}
