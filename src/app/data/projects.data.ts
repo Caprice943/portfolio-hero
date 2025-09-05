@@ -19,9 +19,9 @@ export const PROJECTS: Project[] = [
     demoUrl: 'https://www.lapostegroupe.com/fr/services-courrier-colis',
   },
    {
-    id: 'portofolio',
-    title: 'Portofolio personnel',
-    description: 'Première version de mon portofolio pour me présenter à vous',
+    id: 'portfolio',
+    title: 'Portfolio personnel',
+    description: 'Première version de mon portfolio pour me présenter à vous',
     tags: ['Angular', 'SCSS', 'Firebase', 'TypeScript'],
     codeUrl: 'https://github.com/Caprice943/portfolio-hero',
     demoUrl: '',

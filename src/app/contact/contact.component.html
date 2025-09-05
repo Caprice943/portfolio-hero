@@ -11,7 +11,7 @@
                             [class.invalid]="f.name.invalid && f.name.touched" />
                         @if (f.name.invalid && f.name.touched) {
                         <p class="error">
-                            @if (f.name.errors?.['required']) { Le nom est requis. }
+                            @if (f.name.errors?.['required']) { Votre nom est requis. }
                             @else if (f.name.errors?.['minlength']) { Minimum 2 caractères. }
                         </p>
                         }
@@ -24,7 +24,7 @@
                             autocomplete="email" [class.invalid]="f.email.invalid && f.email.touched" />
                         @if (f.email.invalid && f.email.touched) {
                         <p class="error">
-                            @if (f.email.errors?.['required']) { L’email est requis. }
+                            @if (f.email.errors?.['required']) { Votre email est requis. }
                             @else if (f.email.errors?.['email']) { Format d’email invalide. }
                         </p>
                         }
@@ -37,7 +37,7 @@
                             [class.invalid]="f.message.invalid && f.message.touched"></textarea>
                         @if (f.message.invalid && f.message.touched) {
                         <p class="error">
-                            @if (f.message.errors?.['required']) { Le message est requis. }
+                            @if (f.message.errors?.['required']) { Votre message est requis. }
                             @else if (f.message.errors?.['minlength']) { Minimum 10 caractères. }
                         </p>
                         }

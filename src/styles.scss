@@ -14,13 +14,19 @@ body{
    font-family: "Baumans", system-ui;
   font-weight: 400;
   font-style: normal;
-background-image: radial-gradient(circle, #051937, #111a41, #211a4a, #331750, #461053);
+//  background-image: radial-gradient(circle, #051937, #111a41, #211a4a, #331750, #461053);
+  background-color: #121212; 
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
 }
 
 h2{
     background: linear-gradient(
         to right,
-        #b59bec 20%,
+        #7953cd 20%,
         #6fbee0 30%,
         #2f9dcc 70%,
         #6f4ebd 80%
