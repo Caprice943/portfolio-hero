@@ -35,6 +35,7 @@ h2{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
+    font-style: italic;
     animation: textShine 5s ease-in-out infinite alternate;
 
     @keyframes textShine {

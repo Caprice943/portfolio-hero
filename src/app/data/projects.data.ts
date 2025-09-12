@@ -5,15 +5,13 @@ export interface Project {
   tags: string[];
   codeUrl?: string;
   demoUrl?: string;
-  // image?: string;
-  // details?: string;
 }
 
 export const PROJECTS: Project[] = [
    {
     id: 'laposte',
     title: 'Application RER',
-    description: 'Application de reporting interne aux équipes de la Poste branche Service-Courrier-Colis',
+    description: 'Application interne de reporting des releases de toutes les applications utilisées par les équipes de la Poste branche Service-Courrier-Colis',
     tags: ['Angular', 'Springboot', 'Angular Material','MySQL'],
     codeUrl: 'https://github.com/',
     demoUrl: 'https://www.lapostegroupe.com/fr/services-courrier-colis',
@@ -38,9 +36,9 @@ export const PROJECTS: Project[] = [
     id: 'memorygame',
     title: 'Jeu de Mémoire',
     description: 'Jeu de mémoire',
-    tags: ['React', 'CSS', 'Firebase'],
-    codeUrl: '',
-    demoUrl: '',
+    tags: ['React', 'CSS', 'Vercel'],
+    codeUrl: 'https://github.com/Caprice943/Memory-game-reactjs',
+    demoUrl: 'https://memory-game-reactjs.vercel.app/',
   },
   // {
   //   id: 'messagingapp',

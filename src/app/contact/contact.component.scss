@@ -29,6 +29,7 @@ section { scroll-margin-top: var(--nav-h); }
   justify-items: stretch;
   gap: 1.5rem;
 
+
   @media (max-width: 920px) {
     grid-template-columns: 1fr;
   }
@@ -40,17 +41,57 @@ section { scroll-margin-top: var(--nav-h); }
   align-items: center;
 }
 
+.form-card{
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
 .form-card form {
+  position: relative;
   width: 100%;
   display: grid;
   gap: 2rem;
-  background-color: transparent;
-  border: 2px solid white;
+  background-color: black;
   border-radius: 18px;
   padding: 2rem;
-  backdrop-filter: blur(8px);
-  transition: background-color 0.3s;
+
 }
+
+@property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.form-card form::after, .form-card form::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle),transparent, rgb(162, 0, 255), rgb(58, 58, 202), rgb(149, 27, 197));
+  top:50%;
+  left:50%;
+  translate: -50% -50%;
+  padding: 2px;
+  border-radius: inherit;
+  animation: 10s spin linear infinite;
+  z-index: -5;
+}
+
+.form-card::before{
+  opacity: 0.5;
+}
+
+@keyframes spin{
+  from {
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
+}
+
 
 .row {
   display: grid;
@@ -92,13 +133,15 @@ textarea {
 
   &::placeholder {
     color: color-mix(in oklab, var(--text, #f5f7fb), transparent 45%);
+    font-style: italic;
+    font-weight: 400;
   }
 
   &:focus {
     outline: none;
-    border-color: #7d23e0;
-    background: rgba(125, 35, 224, 0.3);
-    box-shadow: 0 0 0 3px color-mix(in oklab, #6366f1, transparent 70%);
+    border-color: #623494;
+    background: rgba(34, 25, 43, 0.3);
+    box-shadow: 0 0 0 3px color-mix(in oklab, #5456b3, transparent 70%);
   }
 
   &.invalid {
@@ -157,20 +200,34 @@ textarea {
   }
 
   .pill {
+  position: relative;
     width: 50%;
     display: flex;
     gap: .9rem;
     align-items: center;
-    padding: .9rem 1rem;
-    border-radius: 14px;
-    background: transparent;
-    border: 2px solid #fff;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 8px 22px rgba(0, 0, 0, .18);
+    padding: 1.5rem;
+    border-radius: 18px;
+    background: black;
+  
 
      @media (max-width: 560px) {
     width: 80%;
   }
+  }
+
+  .pill::before, .pill::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),transparent, rgb(162, 0, 255), rgb(58, 58, 202), rgb(149, 27, 197));
+    top:50%;
+    left:50%;
+    translate: -50% -50%;
+    padding: 2px;
+    border-radius: inherit;
+    animation: 10s spin linear infinite;
+    z-index: -5;
   }
 
   .pill svg {
@@ -189,8 +246,6 @@ textarea {
     opacity: .75;
     font-size: 1.2rem;
     background: linear-gradient(135deg, #7c3aed33, #6366f133);
-    // margin-right: 1rem;
-    // vertical-align: middle;
 
   }
 
@@ -206,8 +261,10 @@ textarea {
   }
 
   a, .loc {
-    color: whitesmoke;
+    color: transparent;
     font-style: italic;
+    background-clip: text;
+    background-image: linear-gradient(rgb(162, 0, 255), rgb(58, 58, 202));
   }
 
 }
@@ -216,7 +273,7 @@ textarea {
     margin-top: 25px;
     padding: 2px;
     height: 70px;
-    color: white;
+    color:  whitesmoke;
     border-top: 2px solid white;
     position: relative;
     top: 0;
@@ -225,6 +282,10 @@ textarea {
     max-width: 100%;
     text-align: center;
     z-index: 1;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    font-size: 1rem;
 }
 
 

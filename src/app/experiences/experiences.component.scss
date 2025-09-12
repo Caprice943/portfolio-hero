@@ -51,11 +51,45 @@ h2{
   position: relative;
   border-radius: 18px;
   padding: 1.25rem 1.25rem 1rem;
-  background: color-mix(in oklab, var(--surface-2), transparent 15%);
-  border: 2px solid white;
-  box-shadow: 0 10px 30px rgba(111, 54, 202, 0.12);
-  transition: background-color 0.3s;
-  backdrop-filter: blur(8px);
+  background: black;
+  // border: 2px solid white;
+  // box-shadow: 0 10px 30px rgba(111, 54, 202, 0.12);
+  // transition: background-color 0.3s;
+  // backdrop-filter: blur(8px);
+}
+
+@property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.card::after, .card::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle),transparent, rgb(162, 0, 255), rgb(58, 58, 202), rgb(149, 27, 197));
+  top:50%;
+  left:50%;
+  translate: -50% -50%;
+  z-index: -5;
+  padding: 2px;
+  border-radius: 18px;
+  animation: 10s spin linear infinite;
+}
+
+.card::before{
+  opacity: 0.5;
+}
+
+@keyframes spin{
+  from {
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
 }
 
 .card-head {
