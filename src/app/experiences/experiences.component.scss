@@ -1,4 +1,6 @@
-section { scroll-margin-top: var(--nav-h); }
+section {
+  scroll-margin-top: var(--nav-h);
+}
 
 .xp {
   max-width: 1000px;
@@ -7,12 +9,12 @@ section { scroll-margin-top: var(--nav-h); }
 
 }
 
-h2{
-  margin-top: 4rem  ;
-    font-weight: 800;
-    font-size: clamp(1.6rem, 1.6vw + 1rem, 2.6rem);
-    letter-spacing: .02em;
-    text-align: center;
+h2 {
+  margin-top: 4rem;
+  font-weight: 800;
+  font-size: clamp(1.6rem, 1.6vw + 1rem, 2.6rem);
+  letter-spacing: .02em;
+  text-align: center;
 }
 
 .xp-list {
@@ -64,14 +66,16 @@ h2{
   initial-value: 0deg;
 }
 
-.card::after, .card::before{
+.card::after,
+.card::before {
   content: '';
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: conic-gradient(from var(--angle),transparent, rgb(162, 0, 255), rgb(58, 58, 202), rgb(149, 27, 197));
-  top:50%;
-  left:50%;
+  // background-image: conic-gradient(from var(--angle), transparent, rgb(162, 0, 255), rgb(58, 58, 202), rgb(149, 27, 197));
+  background-image: conic-gradient(from var(--angle), transparent, rgb(40, 160, 40));
+  top: 50%;
+  left: 50%;
   translate: -50% -50%;
   z-index: -5;
   padding: 2px;
@@ -79,15 +83,16 @@ h2{
   animation: 10s spin linear infinite;
 }
 
-.card::before{
+.card::before {
   opacity: 0.5;
 }
 
-@keyframes spin{
+@keyframes spin {
   from {
     --angle: 0deg;
   }
-  to{
+
+  to {
     --angle: 360deg;
   }
 }
@@ -115,6 +120,7 @@ h2{
   opacity: 0.7;
   transition: opacity 0.15s ease, transform 0.15s ease;
 }
+
 .card:hover .ext {
   opacity: 1;
   transform: translateY(-1px);
@@ -148,4 +154,3 @@ h2{
   color: white;
   white-space: nowrap;
 }
-

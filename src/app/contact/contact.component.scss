@@ -69,7 +69,8 @@ section { scroll-margin-top: var(--nav-h); }
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: conic-gradient(from var(--angle),transparent, rgb(162, 0, 255), rgb(58, 58, 202), rgb(149, 27, 197));
+  // background-image: conic-gradient(from var(--angle),transparent, rgb(162, 0, 255), rgb(58, 58, 202), rgb(149, 27, 197));
+  background-image: conic-gradient(from var(--angle), transparent, rgb(40, 160, 40));
   top:50%;
   left:50%;
   translate: -50% -50%;
@@ -220,7 +221,8 @@ textarea {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle),transparent, rgb(162, 0, 255), rgb(58, 58, 202), rgb(149, 27, 197));
+    // background-image: conic-gradient(from var(--angle),transparent, rgb(162, 0, 255), rgb(58, 58, 202), rgb(149, 27, 197));
+    background-image: conic-gradient(from var(--angle), transparent, rgb(40, 160, 40));
     top:50%;
     left:50%;
     translate: -50% -50%;
