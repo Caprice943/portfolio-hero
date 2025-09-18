@@ -140,9 +140,9 @@ textarea {
 
   &:focus {
     outline: none;
-    border-color: #623494;
+    border-color: #35a52d;
     background: rgba(34, 25, 43, 0.3);
-    box-shadow: 0 0 0 3px color-mix(in oklab, #5456b3, transparent 70%);
+    box-shadow: 0 10px 28px rgba(92, 167, 63, 0.6);
   }
 
   &.invalid {
@@ -170,8 +170,8 @@ textarea {
   font-weight: 800;
   letter-spacing: .02em;
   cursor: pointer;
-  background: linear-gradient(135deg, #7c3aed, #6366f1);
-  box-shadow: 0 10px 24px rgba(99, 102, 241, .45);
+  background: linear-gradient(135deg, #55da34, #096d1f);
+  box-shadow: 0 10px 28px rgba(92, 167, 63, 0.6);
   transition: background-color 0.3s;
 
   &:disabled {
@@ -183,7 +183,7 @@ textarea {
   &:hover:not(:disabled),
   &:focus-visible:not(:disabled) {
     transform: translateY(-1px);
-    box-shadow: 0 14px 30px rgba(99, 102, 241, .55);
+    box-shadow: 0 6px 18px rgba(111, 218, 84, 0.45);
     filter: saturate(1.06);
   }
 
@@ -221,7 +221,6 @@ textarea {
     position: absolute;
     height: 100%;
     width: 100%;
-    // background-image: conic-gradient(from var(--angle),transparent, rgb(162, 0, 255), rgb(58, 58, 202), rgb(149, 27, 197));
     background-image: conic-gradient(from var(--angle), transparent, rgb(40, 160, 40));
     top:50%;
     left:50%;
@@ -247,7 +246,7 @@ textarea {
     flex: 0 0 auto;
     opacity: .75;
     font-size: 1.2rem;
-    background: linear-gradient(135deg, #7c3aed33, #6366f133);
+    background:  #02290a;
 
   }
 
@@ -266,7 +265,9 @@ textarea {
     color: transparent;
     font-style: italic;
     background-clip: text;
-    background-image: linear-gradient(rgb(162, 0, 255), rgb(58, 58, 202));
+    font-weight: 800;
+    font-size: 1.1rem;
+    background-image: linear-gradient(#35a52d, #0c420a);
   }
 
 }

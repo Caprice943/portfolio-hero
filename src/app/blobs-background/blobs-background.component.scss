@@ -1,0 +1,87 @@
+/* ---------- Variables ---------- */
+:host {
+  --bg1: #0a2b66;
+  --bg2: #062a56;
+  --pink: #ff6ad5;
+  --magenta: #ff3fa4;
+  --cyan: #6ee1ff;
+  --violet: #7b5cff;
+  --card: rgba(255, 255, 255, 0.08);
+  --card-border: rgba(255, 255, 255, 0.35);
+}
+
+/* ---------- Scène ---------- */
+.scene {
+  position: relative;
+  min-height: clamp(380px, 70dvh, 720px);
+  padding: clamp(16px, 4vw, 48px);
+  border-radius: 24px;
+  overflow: hidden;
+  background: radial-gradient(1200px 800px at 80% 0%, #0e3a7a 0%, transparent 70%),
+              radial-gradient(900px 700px at 0% 0%, #08306b 0%, transparent 65%),
+              linear-gradient(135deg, var(--bg1), var(--bg2));
+  isolation: isolate; /* pour mix-blend-mode */
+}
+
+/* ---------- Blobs ---------- */
+.blob {
+  position: absolute;
+  width: clamp(220px, 28vw, 420px);
+  height: clamp(220px, 28vw, 420px);
+  border-radius: 50%;
+  filter: blur(14px);
+  opacity: .9;
+  mix-blend-mode: screen;
+  will-change: transform, opacity;
+
+  /* dégradé multicolore doux */
+  background:
+    radial-gradient(circle at 30% 30%, var(--pink) 0 35%, transparent 36%),
+    radial-gradient(circle at 65% 40%, var(--cyan) 0 33%, transparent 34%),
+    radial-gradient(circle at 55% 75%, var(--magenta) 0 28%, transparent 30%),
+    radial-gradient(circle at 20% 80%, var(--violet) 0 22%, transparent 24%);
+}
+
+/* positions de départ + animations distinctes */
+.b1 { left: -6%; top: 2%;    animation: float1 18s ease-in-out infinite alternate; }
+.b2 { right: -8%; bottom: -6%; animation: float2 22s ease-in-out infinite alternate; }
+.b3 {
+  right: 14%; top: 18%;
+  width: clamp(70px, 8vw, 110px);
+  height: clamp(70px, 8vw, 110px);
+  filter: blur(8px);
+  opacity: .8;
+  animation: float3 16s ease-in-out infinite alternate;
+}
+
+/* léger grain pour l’aspect “glaçe” */
+.grain {
+  position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: .25;
+  background-image:
+    radial-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
+    radial-gradient(rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size: 3px 3px, 7px 7px;
+  background-position: 0 0, 1px 1px;
+  mix-blend-mode: overlay;
+}
+
+/* ---------- Keyframes (GPU-friendly) ---------- */
+@keyframes float1 {
+  0%   { transform: translate3d(0,0,0) scale(1.00) rotate(0deg);   }
+  50%  { transform: translate3d(20px, -16px, 0) scale(1.05) rotate(6deg); }
+  100% { transform: translate3d(40px, 10px, 0) scale(0.98) rotate(-4deg); }
+}
+@keyframes float2 {
+  0%   { transform: translate3d(0,0,0) scale(1) rotate(0deg); }
+  40%  { transform: translate3d(-24px, -8px, 0) scale(1.06) rotate(-5deg); }
+  100% { transform: translate3d(-46px, 18px, 0) scale(1.02) rotate(4deg); }
+}
+@keyframes float3 {
+  0%   { transform: translate3d(0,0,0) scale(1); }
+  100% { transform: translate3d(10px, -14px, 0) scale(1.2); }
+}
+
+/* Fallback si backdrop-filter pas supporté (certains navigateurs/versions) */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass { background: rgba(20, 34, 71, .55); }
+}

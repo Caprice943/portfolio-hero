@@ -1,49 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Kode+Mono:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baumans&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap');
 
-body{
-  // font-family: "Handjet", sans-serif;
-  // font-optical-sizing: auto;
-  // font-weight: 900;
-  // font-style: normal;
-  // font-variation-settings:
-  //   "ELGR" 1,
-  //   "ELSH" 2;
-   font-family: "Baumans", system-ui;
+html, body, app-root { background: linear-gradient(135deg,#121546 0%,#30268a 100%); }
+
+body {
+  margin: 0;
+  padding: 0;
+ font-family: "Simonetta", serif;
   font-weight: 400;
   font-style: normal;
-//  background-image: radial-gradient(circle, #051937, #111a41, #211a4a, #331750, #461053);
-  background-color: #121212; 
-  background-image: 
-    radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-position: 0 0, 25px 25px;
-  background-size: 50px 50px;
+  background: linear-gradient(135deg, #121546 0%, #30268a 100%);
 }
 
-h2{
-    background: linear-gradient(
-        to right,
-        #7953cd 20%,
-        #6fbee0 30%,
-        #2f9dcc 70%,
-        #6f4ebd 80%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 500% auto;
-    font-style: italic;
-    animation: textShine 5s ease-in-out infinite alternate;
+h2 {
+  background:  #35a52d;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  font-style: italic;
+  animation: textShine 5s ease-in-out infinite alternate;
 
-    @keyframes textShine {
+  @keyframes textShine {
     0% {
-        background-position: 0% 50%;
+      background-position: 0% 50%;
     }
+
     100% {
-        background-position: 100% 50%;
+      background-position: 100% 50%;
     }
-}
+  }
 }
