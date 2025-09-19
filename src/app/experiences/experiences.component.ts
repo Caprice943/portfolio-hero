@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { SplitSentencesPipe } from '../split-sentences.pipe';
 
 type Experience = {
   period: string;
@@ -13,7 +14,7 @@ type Experience = {
 @Component({
   selector: 'app-experiences',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SplitSentencesPipe],
   templateUrl: './experiences.component.html',
   styleUrl: './experiences.component.scss'
 })
@@ -25,7 +26,7 @@ export class ExperiencesComponent {
       period: " Novembre 2022 - Octobre 2024 ",
       title: " Développeuse Fullstack Junior Java/Angular ",
       company: " DSI Branche Service-Courrier-Colis de la Poste Groupe ",
-      description: " Pilotage du développement de nouvelles fonctionnalités sur un projet interne stratégique, en méthode Agile SCRUM. Rédaction et automatisation de tests unitaires (JUnit, Jasmine) pour garantir la qualité et la fiabilité du code.Conception et documentation d’API REST avec Spring Boot et Swagger, ainsi que contribution à la mise en conformité de l’accessibilité numérique. ",
+      description: " Pilotage du développement de nouvelles fonctionnalités sur un projet interne stratégique, en méthode Agile SCRUM. Rédaction et automatisation de tests unitaires (JUnit, Jasmine) pour garantir la qualité et la fiabilité du code. Conception et documentation d’API REST avec Spring Boot et Swagger. Contribution à la mise en conformité de l’accessibilité numérique. ",
       tags: ["SpringBoot", "Angular", "MySQL", "Jenkins", "SonarQube", "Gitlab", "Docker"],
       link: "https://www.lapostegroupe.com/fr/services-courrier-colis "
     },

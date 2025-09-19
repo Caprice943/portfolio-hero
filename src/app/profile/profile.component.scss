@@ -41,6 +41,7 @@
   // margin: auto;
 
   border-radius: 18px;
+  color: white;
   padding: 2rem;
   margin: auto;
   background: rgba(255,255,255,0.06);            /* translucide */
@@ -83,7 +84,7 @@
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 30px;
-  color: #06770c;
+  color: wheat;
 }
 
 .second-main-title {
@@ -92,11 +93,11 @@
   
   margin-bottom: 20px;
   font-style: italic;
-  background: linear-gradient(to right, #096d1f 20%, #66a323 40%, #1a8754 60%, #125c12 80%);
+  background: linear-gradient(to right, #ff4081 20%, #ffa726 40%, #9c27b0 60%, #e91e63 80%);
   background-clip: text;
   background-size: 200% auto;
   -webkit-text-fill-color: transparent;
-  animation: shine 2s linear infinite;
+  animation: shine 8s linear infinite;
 
     @keyframes shine {
       to{
@@ -133,7 +134,8 @@
 
 .template-button {
   position: relative;
-  background-color: black;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.25);
   color: white;
   padding: 12px 24px;
   border-radius: 18px;
@@ -144,21 +146,9 @@
   font-size: 14px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
-
-.template-button::after,
-.template-button::before {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: conic-gradient(from var(--angle), transparent, rgb(40, 160, 40));
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -5;
-  padding: 2px;
-  border-radius: 18px;
-  animation: 5s spin linear infinite;
+.template-button:hover {
+  border-color: #ff4081;
+  box-shadow: 0 0 15px rgba(255, 64, 129, 0.6);
 }
 
 .card::before {
@@ -187,10 +177,14 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #35a52d;
+  color: #63e65a;
   font-size: 1rem;
   font-weight: 900;
   font-style: italic;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 12px 24px;
+  border-radius: 18px;
 }
 
 .availability::before {
@@ -263,7 +257,7 @@ ul {
   height: 50px;
   border-radius: 50%;
   color: #4d4d4d;
-  background-color: #0a0a0a;
+  background-color: rgba(255,255,255,0.06);  ;
   transition: all 0.3s ease-in-out;
 }
 

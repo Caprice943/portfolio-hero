@@ -1,28 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Kode+Mono:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baumans&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
-html, body, app-root { background: linear-gradient(135deg,#121546 0%,#30268a 100%); }
 
 body {
   margin: 0;
   padding: 0;
- font-family: "Simonetta", serif;
+  font-family: "Simonetta", serif;
   font-weight: 400;
   font-style: normal;
-  background: linear-gradient(135deg, #121546 0%, #30268a 100%);
+  background: #0f0e17;
+  color: #fff;
 }
 
 h2 {
-  background:  #35a52d;
+  background: #dd688f;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 500% auto;
   font-style: italic;
-  animation: textShine 5s ease-in-out infinite alternate;
+  animation: textShine s ease-in-out infinite alternate;
 
   @keyframes textShine {
     0% {

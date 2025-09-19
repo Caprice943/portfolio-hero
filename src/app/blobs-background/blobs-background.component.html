@@ -1,50 +1,15 @@
-<!-- <div>
-  @if (isBrowser) {
-      <div class="scene" aria-hidden="true">
-        <svg class="defs"><defs>
-        
-          <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
-            <feColorMatrix in="blur" mode="matrix"
-              values="1 0 0 0 0
-                      0 1 0 0 0
-                      0 0 1 0 0
-                      0 0 0 20 -10" result="goo"/>
-            <feBlend in="SourceGraphic" in2="goo"/>
-          </filter>
-        </defs></svg>
+<div class="bubble-container">
+  <div class="background-gradient"></div>
 
-        <div class="layer glow"></div>
-
-      
-        <div class="layer blobs">
-          @for (b of blobs; track $index) {
-            <span class="blob"
-              [style.left.%]="b.left"
-              [style.top.%]="b.top"
-              [style.--size.vmin]="b.size"
-              [style.--hue]="b.hue"
-              [style.--dur.s]="b.dur"
-              [style.--delay.s]="b.delay">
-            </span>
-          }
-        </div>
-      </div>
-
-      <div class="content">
-        <ng-content></ng-content>
-      </div>
-    }
-</div> -->
-
-<section class="scene">
-  <!-- Blobs de fond -->
-  <div class="blob b1" aria-hidden="true"></div>
-  <div class="blob b2" aria-hidden="true"></div>
-  <div class="blob b3" aria-hidden="true"></div>
-  <div class="grain" aria-hidden="true"></div>
+  <div class="bubble bubble-main"></div>
+  <div class="bubble bubble-secondary"></div>
+  <div class="bubble bubble-cyan"></div>
+  <div class="bubble bubble-striped"></div>
+  <div class="bubble bubble-accent-1"></div>
+  <div class="bubble bubble-accent-2"></div>
 
   <div class="content">
     <ng-content></ng-content>
   </div>
-</section>
+  <div class="depth-overlay"></div>
+</div>
