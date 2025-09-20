@@ -4,12 +4,12 @@ import { ContactComponent } from './contact/contact.component';
 import { Component } from '@angular/core';
 import { ProfileComponent } from "./profile/profile.component";
 import { NavbarComponent } from "./navbar/navbar.component";
-import { StarsBackgroundComponent } from './stars-background/stars-background.component';
+import { BlobsBackgroundComponent } from './blobs-background/blobs-background.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent, ContactComponent, ProfileComponent, ProjectComponent, ExperiencesComponent, StarsBackgroundComponent],
+  imports: [NavbarComponent, ContactComponent, ProfileComponent, ProjectComponent, ExperiencesComponent, BlobsBackgroundComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

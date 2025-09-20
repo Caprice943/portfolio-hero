@@ -22,10 +22,15 @@
                 >↗</a>
               }
             </h3>
-
           </header>
 
-          <p class="desc">{{ xp.description }}</p>
+          <ul class="desc">
+            @for (s of (xp.description | splitSentences); track s) {
+            <li>{{ s }}</li>
+            }
+          </ul>
+
+      
 
           <ul class="tags" aria-label="Technologies">
             @for (t of xp.tags; track t) {

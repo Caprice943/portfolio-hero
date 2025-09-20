@@ -1,27 +1,74 @@
-# PortfolioHero
+# 🌟 Portfolio – Caprice Hérédya
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
+Mon portfolio personnel développé avec **Angular 18**, conçu pour présenter mes expériences, projets et compétences de manière moderne et responsive.  
+Il reflète mon parcours en tant que **Développeuse Fullstack Java / Angular** et met en avant mes réalisations professionnelles et personnelles.  
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Aperçu
 
-## Code scaffolding
+![aperçu home page](image.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+🔗 [Voir le portfolio en ligne](https://)
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## ✨ Fonctionnalités
 
-## Running unit tests
+- Section **Accueil** avec présentation, téléchargement de mon CV et disponibilités 
+- Section **Expériences** (timeline avec détails des missions)
+- Section **Projets** (cards glossy avec effets : Code / Demo)
+- Section **Contact** (formulaire + infos directes)
+- Navigation fluide grâce à Angular Router + fragments
+- Design **responsive** 
+- Effets **glassmorphism** et **animations CSS**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🛠️ Stack technique
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- [Angular 18](https://angular.dev/) – Framework principal
+- [TypeScript](https://www.typescriptlang.org/)
+- [SCSS](https://sass-lang.com/) – Styles avancés
+- [EmailJS](https://www.emailjs.com/) – Envoi de messages via le formulaire
+- Hébergé sur **[Firebase](https://firebase.google.com//)**
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 📌 Améliorations prévues
+
+- Ajouter une section blog
+- Améliorer le SEO 
+- Ajouter des animations plus avancées
+
+---
+
+## 📬 Me contacter
+
+- ✉️ Email : heredyamouiri@gmail.com
+- 💼 [LinkedIn](https://www.linkedin.com/in/caprice-ndombi-mouiri-2932011aa/)
+- 🐙 [GitHub](https://github.com/Caprice943)
+
+---
+
+## ⚙️ Installation
+
+Clone le projet et installe les dépendances pour le lancer en local :  
+
+```bash
+# Cloner le repo
+git clone https://github.com/Caprice943/portfolio-hero.git
+
+# Aller dans le dossier
+cd portfolio-hero
+
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de développement
+ng serve
+
+````
+
+
+#### ✨ Merci d’avoir pris le temps de visiter mon portfolio ! N’hésitez pas à me contacter pour une collaboration ou une opportunité.

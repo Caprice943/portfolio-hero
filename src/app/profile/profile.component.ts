@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -10,8 +9,6 @@ import { Router } from '@angular/router';
 })
 export class ProfileComponent {
 
-  greetings = "<Hello World 👋 />"
-
-
+  greetings = "<Hello World 🙋🏽‍♀️ />"
 
 }
