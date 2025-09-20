@@ -58,7 +58,8 @@
     font-size: clamp(1.05rem, .6vw + .9rem, 1.4rem);
     letter-spacing: .01em;
     color: #fff;
-    background: linear-gradient(to right, #ffa726 20%, #e91e63 40%, #ffcc02 60%, #9c27b0 80%);
+    background-color: #ffa726  ;
+    // background: linear-gradient(to right, #ffa726 20%, #e91e63 40%, #ffcc02 60%, #9c27b0 80%);
      
       
     background-clip: text;
@@ -162,7 +163,7 @@
   color: #fff;
   border: 0;
   background: radial-gradient(
-      circle at 30% 30%, 
+      circle at 60% 30%, 
       #ff6b9d, 
       #ff8a9b, 
       #ffa726, 
@@ -181,7 +182,7 @@
 
   &:hover,
   &:focus-visible {
-    box-shadow: 0 10px 28px rgba(92, 167, 63, 0.6);
+    box-shadow: 0 10px 20px #ff8a9b;
     filter: saturate(1.06);
   }
 }
