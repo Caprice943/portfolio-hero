@@ -1,12 +1,20 @@
+:host {
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
 section {
-  scroll-margin-top: var(--nav-h);
+  margin-top: 0 !important;
+  transform: none !important;
+  top: auto !important;
+  padding: 2rem 1rem 4rem;
 }
 
 .xp {
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 1rem 4rem;
-
 }
 
 h2 {
@@ -58,40 +66,12 @@ h2 {
 
 }
 
-@property --angle {
-  syntax: '<angle>';
-  inherits: false;
-  initial-value: 0deg;
-}
-
-.card::after,
-.card::before {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -5;
-  padding: 2px;
-  border-radius: 18px;
-  animation: 10s spin linear infinite;
-}
-
 .card::before {
   opacity: 0.5;
 }
 
-@keyframes spin {
-  from {
-    --angle: 0deg;
-  }
-
-  to {
-    --angle: 360deg;
-  }
+.card::after {
+  filter: blur(12px);
 }
 
 .card-head {
@@ -150,4 +130,36 @@ h2 {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) inset;
   color: white;
   white-space: nowrap;
+}
+
+
+@media screen and (max-width: 600px) {
+  .xp {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  h2 {
+    margin-top: 3rem;
+  }
+
+  .xp-item {
+    gap: 1rem;
+  }
+
+  .col.period {
+    font-size: 0.9rem;
+  }
+
+  .role {
+    font-size: 1.1rem;
+  }
+
+  .desc {
+    font-size: 0.9rem;
+  }
+
+  .chip {
+    font-size: 0.75rem;
+    padding: 0.45rem 0.6rem;
+  }
 }
