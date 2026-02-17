@@ -1,11 +1,4 @@
 
-:host {
-  display: block;
-  position: relative;
-  z-index: 0;
-  margin-bottom: 2rem;
-}
-
 .second-main-title {
   background: linear-gradient(to right, #ff4081 20%, #ffa726 40%, #9c27b0 60%, #e91e63 80%);
   background-clip: text;
@@ -19,10 +12,6 @@
     }
 
   }
-}
-
-.card::before {
-  opacity: 0.5;
 }
 
 .availability {

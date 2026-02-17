@@ -1,44 +1,51 @@
-<section class="xp">
-  <h2>Expériences professionnelles </h2>
-  <br/>
+<section class="xp" class="scroll-mt-24 px-4 sm:px-6 lg:px-8 py-16">
+  <div class="mx-auto w-full max-w-[1200px]">
+    <h2 class="text-center pt-8 text-4xl sm:text-5xl font-extrabold text-pink-500">Expériences professionnelles </h2>
+    <br />
+    
+    <ul class="mt-12 space-y-8">
+      @for (xp of experiences; track xp.title) {
+      <li class="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-4 lg:gap-8 items-start">
+        <div class="text-white/90 pt-12 font-semibold lg:text-right leading-snug lg:whitespace-nowrap"> <span
+            class="block sm:inline">
+            {{ xp.period.split('-')[0] }} -
+          </span>
+          <span class="block sm:inline">
+            {{ xp.period.split('-')[1] }}
+          </span>
+        </div>
 
-  <ul class="xp-list">
-    @for (xp of experiences; track xp.title) {
-      <li class="xp-item">
-        <div class="col period">{{ xp.period }}</div>
-
-        <article class="col card" tabindex="0">
-          <header class="card-head">
-            <h3 class="role">
+        <article class="glass w-full p-6 sm:p-8" tabindex="0">
+          <header>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-amber-200">
               {{ xp.title }}
-              @if (xp.company) { · {{ xp.company }} }
+              @if (xp.company) { <span class="text-white/90"> · {{ xp.company }} </span>}
               @if (xp.link) {
-                <a
-                  class="ext"
-                  [href]="xp.link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Voir l’entreprise (nouvel onglet)"
-                >↗</a>
+              <a class="ml-2 inline-flex items-center rounded-lg px-2 py-1 text-white/80 hover:text-white hover:bg-white/10 transition"
+                class="ext" [href]="xp.link" target="_blank" rel="noopener noreferrer"
+                aria-label="Voir l’entreprise">↗</a>
               }
             </h3>
           </header>
 
-          <ul class="desc">
+          <ul class="mt-4 space-y-2 text-white/90 leading-relaxed">
             @for (s of (xp.description | splitSentences); track s) {
-            <li>{{ s }}</li>
+            <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-white/60 shrink-0"></span>
+              <span>{{ s }}</span>
+            </li>
             }
           </ul>
 
-      
-
-          <ul class="tags" aria-label="Technologies">
+          <ul class="mt-6 flex flex-wrap gap-2" aria-label="Technologies">
             @for (t of xp.tags; track t) {
-              <li class="chip">{{ t }}</li>
+            <li class="px-3 py-1 rounded-full border border-yellow-200 bg-white/5 text-white/90 text-sm"> <span
+                class="text-orange-200">{{ t }}</span></li>
             }
           </ul>
         </article>
       </li>
-    }
-  </ul>
+      }
+    </ul>
+
+  </div>
 </section>
