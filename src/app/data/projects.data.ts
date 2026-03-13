@@ -20,18 +20,18 @@ export const PROJECTS: Project[] = [
     id: 'portfolio',
     title: 'Portfolio personnel',
     description: 'Première version de mon portfolio pour me présenter à vous et vous montrer mes projets (lien actuel)',
-    tags: ['Angular', 'SCSS', 'Firebase', 'TypeScript'],
+    tags: ['Angular', 'Tailwind CSS', 'Firebase', 'TypeScript'],
     codeUrl: 'https://github.com/Caprice943/portfolio-hero',
     demoUrl: '',
   },
-  // {
-  //   id: 'meteo',
-  //   title: 'Application Météo',
-  //   description: 'Application Météo ',
-  //   tags: ['JavaScript', 'CSS', 'Firebase'],
-  //   codeUrl: '',
-  //   demoUrl: '',
-  // },
+  {
+    id: 'dashboard',
+    title: 'Dashboard KPI Nasa',
+    description: 'Dashboard interactif Angular permettant de visualiser des données spatiales de la NASA (astéroïdes, activité solaire, images astronomiques) via des graphiques dynamiques avec ApexCharts.',
+    tags: ['Angular', 'Typescript', 'ApexCharts', 'NASA APIs', 'Vercel', 'RxJs/Signals'],
+    codeUrl: 'https://github.com/Caprice943/dashboard-kpi-nasa',
+    demoUrl: 'https://dashboard-kpi-nasa.vercel.app/',
+  },
   {
     id: 'memorygame',
     title: 'Jeu de Mémoire',
@@ -40,16 +40,9 @@ export const PROJECTS: Project[] = [
     codeUrl: 'https://github.com/Caprice943/Memory-game-reactjs',
     demoUrl: 'https://memory-game-reactjs.vercel.app/',
   },
-  // {
-  //   id: 'messagingapp',
-  //   title: 'Application de messages',
-  //   description:
-  //     'Application personnalisée de message type Discord ou WhatsApp',
-  //   tags: ['NodeJs', 'CSS', 'Firebase'],
-  //   codeUrl: '',
-  //   demoUrl: '',
-  // },
-    {
+
+
+  {
     id: 'blackclover',
     title: 'Application BlackClover',
     description:
