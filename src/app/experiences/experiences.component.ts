@@ -12,11 +12,10 @@ type Experience = {
 };
 
 @Component({
-  selector: 'app-experiences',
-  standalone: true,
-  imports: [CommonModule, SplitSentencesPipe],
-  templateUrl: './experiences.component.html',
-  styleUrl: './experiences.component.scss'
+    selector: 'app-experiences',
+    imports: [CommonModule, SplitSentencesPipe],
+    templateUrl: './experiences.component.html',
+    styleUrl: './experiences.component.scss'
 })
 
 export class ExperiencesComponent {

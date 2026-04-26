@@ -7,11 +7,10 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { BlobsBackgroundComponent } from './blobs-background/blobs-background.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [NavbarComponent, ContactComponent, ProfileComponent, ProjectComponent, ExperiencesComponent, BlobsBackgroundComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    imports: [NavbarComponent, ContactComponent, ProfileComponent, ProjectComponent, ExperiencesComponent, BlobsBackgroundComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'portfolio-hero';
