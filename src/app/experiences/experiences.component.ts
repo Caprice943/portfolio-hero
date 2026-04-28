@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { SplitSentencesPipe } from '../split-sentences.pipe';
 
@@ -13,7 +13,7 @@ type Experience = {
 
 @Component({
     selector: 'app-experiences',
-    imports: [CommonModule, SplitSentencesPipe],
+    imports: [SplitSentencesPipe],
     templateUrl: './experiences.component.html',
     styleUrl: './experiences.component.scss'
 })
