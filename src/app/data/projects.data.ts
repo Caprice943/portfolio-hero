@@ -42,13 +42,13 @@ export const PROJECTS: Project[] = [
   },
 
 
-  {
-    id: 'blackclover',
-    title: 'Application BlackClover',
-    description:
-      'Application qui affiche nos personnages préférés de Black Clover',
-    tags: ['Angular', 'CSS', 'Firebase'],
-    codeUrl: 'https://github.com/Caprice943/workshop_blackClover',
-    demoUrl: 'https://angular-pokeprice-app.web.app/mages',
-  },
+  // {
+  //   id: 'blackclover',
+  //   title: 'Application BlackClover',
+  //   description:
+  //     'Application qui affiche nos personnages préférés de Black Clover',
+  //   tags: ['Angular', 'CSS', 'Firebase'],
+  //   codeUrl: 'https://github.com/Caprice943/workshop_blackClover',
+  //   demoUrl: 'https://angular-pokeprice-app.web.app/mages',
+  // },
 ];
