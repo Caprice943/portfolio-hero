@@ -1,7 +1,7 @@
 # 🌟 Portfolio – Caprice Hérédya
 
-Mon portfolio personnel développé avec **Angular 18**, conçu pour présenter mes expériences, projets et compétences de manière moderne et responsive.  
-Il reflète mon parcours en tant que **Développeuse Fullstack Java / Angular** et met en avant mes réalisations professionnelles et personnelles.  
+Mon portfolio personnel développé avec **Angular 21**, conçu pour présenter mes expériences, projets et compétences de manière moderne et responsive.  
+Il reflète mon parcours en tant que **Développeuse Fullstack** et met en avant mes réalisations professionnelles et personnelles.  
 
 ---
 
